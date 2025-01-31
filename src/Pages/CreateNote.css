@@ -1,0 +1,64 @@
+h2{
+    margin-left: 20px;
+}
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+header a {
+    margin-left:5px ;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: blueviolet;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formElement {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formElement input,
+.formElement textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+
+.formElement input::placeholder,
+.formElement textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.formElement input:focus,
+.formElement textarea:focus {
+    border-color: blueviolet;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .view {
+        width: 95%;
+    }
+}

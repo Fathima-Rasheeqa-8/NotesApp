@@ -1,0 +1,124 @@
+
+body {
+    background-color: rgb(13, 14, 14); /* Full black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.view {
+    width: 90%; 
+    max-width: 400px; 
+    background-color:black ; 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.notes__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.notes__header h2 {
+    margin-left: 20px;
+    font-size: 26px;
+}
+
+.notes__header input {
+    flex-grow: 1;
+    margin-left: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: blueviolet;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.notes__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.notes__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.note {
+    background-color: blueviolet;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%; 
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.note-wrapper {
+    width: 100%;
+    background-color: black; 
+    padding: 5px; 
+    border-radius: 8px;
+}
+
+.note p {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80%;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: blueviolet;
+    background: rgba(138, 43, 226, 0.2);
+    padding: 3px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    
+}
+.notes__header input {
+    flex-grow: 1;
+    margin-left: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+    opacity: 0;
+}
+
+.notes__header input:focus,
+.notes__header input:not([placeholder=""]) {
+    width: 150px; 
+    opacity: 1;
+}
